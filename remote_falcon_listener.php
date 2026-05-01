@@ -1,5 +1,5 @@
 <?php
-$PLUGIN_VERSION = "2026.01.02.01";
+$PLUGIN_VERSION = "2026.05.01.rf1";
 
 include_once "/opt/fpp/www/common.php";
 $pluginName = basename(dirname(__FILE__));
@@ -37,7 +37,7 @@ if (strlen(urldecode($pluginSettings['fppStatusCheckTime']))<1){
   WriteSettingToFile("fppStatusCheckTime",urlencode("1"),$pluginName);
 }
 if (strlen(urldecode($pluginSettings['pluginsApiPath']))<1){
-  WriteSettingToFile("pluginsApiPath",urlencode("https://remotefalcon.com/remote-falcon-plugins-api"),$pluginName);
+  WriteSettingToFile("pluginsApiPath",urlencode("https://requestfalcon.com/api/plugin"),$pluginName);
 }
 if (strlen(urldecode($pluginSettings['verboseLogging']))<1){
   WriteSettingToFile("verboseLogging",urlencode("false"),$pluginName);

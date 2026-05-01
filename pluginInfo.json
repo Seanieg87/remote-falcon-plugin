@@ -1,11 +1,11 @@
 {
-	"repoName": "remote-falcon",
-	"name": "Remote Falcon",
-	"author": "James Vance",
-	"description": "Allows remote control of FPP from the Remote Falcon web application (https://remotefalcon.com)",
-	"homeURL": "https://github.com/remote-falcon/remote-falcon-plugin",
-	"srcURL": "https://github.com/remote-falcon/remote-falcon-plugin.git",
-	"bugURL": "https://github.com/remote-falcon/remote-falcon-issue-tracker/issues",
+	"repoName": "request-falcon",
+	"name": "Request Falcon",
+	"author": "James Vance (original Remote Falcon plugin); Seanieg87 (Request Falcon fork)",
+	"description": "Allows remote control of FPP from the Request Falcon web application (https://requestfalcon.com). Forked from Remote Falcon's plugin (GPL-3.0).",
+	"homeURL": "https://github.com/Seanieg87/remote-falcon-plugin",
+	"srcURL": "https://github.com/Seanieg87/remote-falcon-plugin.git",
+	"bugURL": "https://github.com/Seanieg87/remote-falcon-plugin/issues",
 	"allowUpdates": 1,
 	"versions": [
 		{
