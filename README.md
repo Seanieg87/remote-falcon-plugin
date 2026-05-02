@@ -9,7 +9,7 @@ This is a fork of [Remote Falcon's plugin](https://github.com/Remote-Falcon/remo
 In FPP: **Content Setup → Plugin Manager → Install Plugin From URL** and paste:
 
 ```
-https://raw.githubusercontent.com/Seanieg87/remote-falcon-plugin/master/pluginInfo.json
+https://raw.githubusercontent.com/Seanieg87/request-falcon-plugin/master/pluginInfo.json
 ```
 
 After installing, **reboot your Pi**. Then go to **Content Setup → Request Falcon** and paste your plugin token from your Request Falcon dashboard.
