@@ -8,7 +8,7 @@ $logFile = $settings['logDirectory']."/".$pluginName."-listener.log";
 $pluginConfigFile = $settings['configDirectory'] . "/plugin." .$pluginName;
 $pluginSettings = parse_ini_file($pluginConfigFile);
 
-logEntry("Starting Remote Falcon Plugin v" . $PLUGIN_VERSION);
+logEntry("Starting Request Falcon Plugin v" . $PLUGIN_VERSION);
 
 if ($pluginSettings === false) {
   logEntry("ERROR - Unable to read plugin config file at startup: " . $pluginConfigFile);
@@ -111,7 +111,7 @@ while(true) {
     WriteSettingToFile("remoteFalconListenerEnabled",urlencode("true"),$pluginName);
     WriteSettingToFile("remoteFalconListenerRestarting",urlencode("false"),$pluginName);
 
-    logEntry("Restarting Remote Falcon Plugin v" . $PLUGIN_VERSION);
+    logEntry("Restarting Request Falcon Plugin v" . $PLUGIN_VERSION);
     $pluginsApiPath = urldecode($pluginSettings['pluginsApiPath']);
     logEntry("Plugins API Path: " . $pluginsApiPath);
     $remoteToken = urldecode($pluginSettings['remoteToken']);
@@ -627,7 +627,7 @@ function logEntry($data) {
 
   $logWrite = @fopen($logFile, "a");
   if ($logWrite === false) {
-    error_log("Remote Falcon listener cannot open log file: " . $logFile . " | Message: " . $data);
+    error_log("Request Falcon listener cannot open log file: " . $logFile . " | Message: " . $data);
     return;
   }
 
@@ -644,7 +644,7 @@ function logEntry_verbose($data) {
   
   $logWrite = @fopen($logFile, "a");
   if ($logWrite === false) {
-    error_log("Remote Falcon listener cannot open log file: " . $logFile . " | Message: " . $data);
+    error_log("Request Falcon listener cannot open log file: " . $logFile . " | Message: " . $data);
     return;
   }
 

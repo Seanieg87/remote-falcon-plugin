@@ -263,7 +263,7 @@ function ensureSyncOverlay() {
   const overlay = $(`
     <div id="rfSyncProgressOverlay" class="rf-sync-overlay" style="display:none;">
       <div class="rf-sync-dialog">
-        <div class="rf-sync-title">Syncing with Remote Falcon</div>
+        <div class="rf-sync-title">Syncing with Request Falcon</div>
         <div id="rfSyncProgressText" class="rf-sync-text">Preparing...</div>
         <div id="rfSyncItemText" class="rf-sync-item"></div>
         <div class="rf-sync-bar">
@@ -392,7 +392,7 @@ async function syncPlaylistToRF() {
         return;
       }
 
-      updateSyncProgress('Syncing with Remote Falcon...', 90, '');
+      updateSyncProgress('Syncing with Request Falcon...', 90, '');
 
       await RFAPIPost('/syncPlaylists', {playlists: sequences}, async (data, statusText, xhr) => {
         if(xhr?.status === 200) {
@@ -430,7 +430,7 @@ async function checkPlugin() {
     const connectivity = await runConnectivityTest(false);
     if(!connectivity?.ok) {
       const connectivityError = connectivity?.error ? ` (${connectivity.error})` : '';
-      checkPluginResults.push('Plugin is unable to reach the Remote Falcon API.' + connectivityError);
+      checkPluginResults.push('Plugin is unable to reach the Request Falcon API.' + connectivityError);
     }
   }
 
@@ -491,23 +491,23 @@ async function runConnectivityTest(showToast = false) {
     if(result?.ok) {
       if($status.length) {
         const latencyText = result.latencyMs != null ? ` (${result.latencyMs} ms)` : '';
-        $status.text('Remote Falcon API reachable' + latencyText);
+        $status.text('Request Falcon API reachable' + latencyText);
         $status.addClass('good');
       }
       if(showToast) {
         const latencyText = result.latencyMs != null ? ` in ${result.latencyMs} ms` : '';
-        $.jGrowl("Remote Falcon API reachable" + latencyText, { themeState: 'success' });
+        $.jGrowl("Request Falcon API reachable" + latencyText, { themeState: 'success' });
       }
       return result;
     }
 
     const errorLabel = result?.error ? result.error : 'status_not_up';
     if($status.length) {
-      $status.text('Remote Falcon API unreachable');
+      $status.text('Request Falcon API unreachable');
       $status.addClass('warning');
     }
     if(showToast) {
-      $.jGrowl("Remote Falcon API unreachable: " + errorLabel, { themeState: 'danger' });
+      $.jGrowl("Request Falcon API unreachable: " + errorLabel, { themeState: 'danger' });
     }
     return result;
   } catch (error) {

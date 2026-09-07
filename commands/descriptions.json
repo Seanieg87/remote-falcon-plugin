@@ -1,31 +1,31 @@
 [
   {
-    "name": "Remote Falcon - Turn Interrupt Schedule Off",
+    "name": "Request Falcon - Turn Interrupt Schedule Off",
     "script": "interrupt_schedule_off.php",
     "args": []
   },
   {
-    "name": "Remote Falcon - Turn Interrupt Schedule On",
+    "name": "Request Falcon - Turn Interrupt Schedule On",
     "script": "interrupt_schedule_on.php",
     "args": []
   },
   {
-    "name": "Remote Falcon - Purge Queue/Reset Votes",
+    "name": "Request Falcon - Purge Queue/Reset Votes",
     "script": "purge_queue.php",
     "args": []
   },
   {
-    "name": "Remote Falcon - Restart Listener",
+    "name": "Request Falcon - Restart Listener",
     "script": "restart_remote_falcon.php",
     "args": []
   },
   {
-    "name": "Remote Falcon - Stop Listener",
+    "name": "Request Falcon - Stop Listener",
     "script": "stop_remote_falcon.php",
     "args": []
   },
   {
-    "name": "Remote Falcon - Update Remote Playlist",
+    "name": "Request Falcon - Update Remote Playlist",
     "script": "update_remote_playlist.php",
     "args": [
       {
@@ -38,22 +38,22 @@
     ]
   },
   {
-    "name": "Remote Falcon - Turn Viewer Control Off",
+    "name": "Request Falcon - Turn Viewer Control Off",
     "script": "viewer_control_off.php",
     "args": []
   },
   {
-    "name": "Remote Falcon - Turn Viewer Control On",
+    "name": "Request Falcon - Turn Viewer Control On",
     "script": "viewer_control_on.php",
     "args": []
   },
   {
-    "name": "Remote Falcon - Turn Managed PSA Off",
+    "name": "Request Falcon - Turn Managed PSA Off",
     "script": "managed_psa_off.php",
     "args": []
   },
   {
-    "name": "Remote Falcon - Turn Managed PSA On",
+    "name": "Request Falcon - Turn Managed PSA On",
     "script": "managed_psa_on.php",
     "args": []
   }

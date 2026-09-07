@@ -29,13 +29,13 @@
     <div class="card">
       <div class="justify-content-md-center row" style="padding-bottom: 1em; justify-content: center;">
         <div class="col-md-auto">
-          <h1>Remote Falcon Plugin v<span id="pluginVersion"></span></h1>
+          <h1>Request Falcon Plugin v<span id="pluginVersion"></span></h1>
         </div>
       </div>
 <!--      <div class="justify-content-md-center row" style="padding-bottom: 2em; justify-content: center;">-->
 <!--        <div class="col-md-auto">-->
 <!--          <a class="support-button" href="https://www.patreon.com/RemoteFalcon" target="_blank" rel="noopener noreferrer">-->
-<!--            Support Remote Falcon-->
+<!--            Support Request Falcon-->
 <!--          </a>-->
 <!--        </div>-->
 <!--      </div>-->
@@ -60,12 +60,12 @@
             Show Token
           </div>
           <div class="mb-2 text-muted card-subtitle">
-            Your Show Token, which can be found on the Remote Falcon Control Panel under Account.
+            Your Show Token, which can be found on the Request Falcon dashboard under Setup → Plugin tokens.
           </div>
         </div>
         <div class="col-md-6">
           <div class="input-group">
-            <input type="password" class="form-control" name="remoteTokenInput" id="remoteTokenInput" placeholder="Remote Token" value="">
+            <input type="password" class="form-control" name="remoteTokenInput" id="remoteTokenInput" placeholder="Show Token" value="">
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
           </div>
           <div class="mb-2 text-muted card-subtitle">
             This will run a check on the plugin configuration and automatically report any issues.
-            You can also test connectivity from FPP to the Remote Falcon API.
+            You can also test connectivity from FPP to the Request Falcon API.
           </div>
         </div>
         <div class="col-md-6">
@@ -133,7 +133,7 @@
             Listener Log (tail)
           </div>
           <div class="mb-2 text-muted card-subtitle">
-            View the latest lines from <code>remote-falcon-listener.log</code>.
+            View the latest lines from the listener log.
           </div>
         </div>
         <div class="col-md-6">
@@ -206,14 +206,14 @@
           </div>
         </div>
       </div>
-      <!-- Restart Remote Falcon -->
+      <!-- Restart Request Falcon -->
       <div class="justify-content-md-center row setting-item">
         <div class="col-md-6">
           <div class="card-title h6">
             Restart Listener
           </div>
           <div class="mb-2 text-muted card-subtitle">
-            This will restart the Remote Falcon Listener.
+            This will restart the Request Falcon Listener.
           </div>
         </div>
         <div class="col-md-6">
@@ -222,7 +222,7 @@
           </div>
         </div>
       </div>
-      <!-- Stop Remote Falcon Listener -->
+      <!-- Stop Request Falcon Listener -->
       <div class="justify-content-md-center row setting-item">
         <div class="col-md-6">
           <div class="card-title h6">
@@ -230,7 +230,7 @@
           </div>
           <div class="mb-2 text-muted card-subtitle">
             <span class="warning">WARNING!</span> <br />
-            This will immediately stop the Remote Falcon Listener and no requests/votes will be fetched.
+            This will immediately stop the Request Falcon Listener and no requests/votes will be fetched.
           </div>
         </div>
         <div class="col-md-6">
@@ -246,7 +246,7 @@
           <p>Probably best to just leave these alone...</p>
         </div>
       </div>
-      <!-- Remote Falcon Host -->
+      <!-- Request Falcon Host -->
       <div class="justify-content-md-center row setting-item">
         <div class="col-md-6">
           <div class="card-title h6">
@@ -255,7 +255,7 @@
           <div class="mb-2 text-muted card-subtitle">
             This controls which API is used by the plugin <br />
             <span class="warning">WARNING!</span> <br />
-            This should always be <b>https://remotefalcon.com/remote-falcon-plugins-api</b>. <br />
+            This should always be <b>https://requestfalcon.com/api/plugin</b>. <br />
             Don't change this unless you know what you're doing and/or want to break things.
           </div>
         </div>

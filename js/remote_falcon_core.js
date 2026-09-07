@@ -101,9 +101,9 @@ async function getRemotePlaylistFromConfig() {
 
 function getRemoteFalconListenerEnabledStatus(remoteFalconListenerEnabled) {
   if(remoteFalconListenerEnabled) {
-    return '<h4 style="color:green;">Remote Falcon Listener is Running</h4>';
+    return '<h4 style="color:green;">Request Falcon Listener is Running</h4>';
   }
-  return '<h4 style="color:red;">Remote Falcon Listener is Stopped</h4>';
+  return '<h4 style="color:red;">Request Falcon Listener is Stopped</h4>';
 }
 
 async function checkPluginUpdates() {
